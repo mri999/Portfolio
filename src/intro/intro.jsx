@@ -41,7 +41,7 @@ function Intro() {
         <SectionTag />
       </div>
       <div className="contact">
-        <div className="contactMe">Contact me </div>
+        <div className="contactMe">Find me on </div>
         <a
           className="insta"
           href="https://www.instagram.com/"
