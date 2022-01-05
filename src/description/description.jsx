@@ -1,19 +1,19 @@
 import React from 'react'
-import { RiExternalLinkLine } from 'react-icons/ri'
+import { CgExternal } from 'react-icons/cg'
 import './description.css'
 
 function ProjectCard({ language, title, description, link }) {
   return (
     <div>
-      <div className="card">
+      <a className="card" href={link} target="_blank" rel="noreferrer">
         <div className="codeLanguage"> {language} </div>
         <div className="projectTitle">{title}</div>
         <div className="projectDescription">{description}</div>
-        <a className="link" href={link} target="_blank" rel="noreferrer">
+        <div className="link">
           Github
-          <RiExternalLinkLine className="externalLinkIcon" />
-        </a>
-      </div>
+          <CgExternal className="externalLinkIcon" />
+        </div>
+      </a>
     </div>
   )
 }
@@ -23,29 +23,12 @@ function Description() {
     {
       language: 'Flutter',
       title: 'Digi Wallet UI',
-      description: 'UI part of a digital wallet with multiple cards',
+      description:
+        'Designed a static UI of a digital wallet with multiple cards',
       link: 'https://github.com/mri999/Wallet-UI-Flutter-',
     },
     {
-      language: 'Flutter',
-      title: 'Digi Wallet UI',
-      description: 'UI part of a digital wallet with multiple cards',
-      link: 'https://github.com/mri999/Wallet-UI-Flutter-',
-    },
-    {
-      language: 'Flutter',
-      title: 'Digi Wallet UI',
-      description: 'UI part of a digital wallet with multiple cards',
-      link: 'https://github.com/mri999/Wallet-UI-Flutter-',
-    },
-    {
-      language: 'Flutter',
-      title: 'Digi Wallet UI',
-      description: 'UI part of a digital wallet with multiple cards',
-      link: 'https://github.com/mri999/Wallet-UI-Flutter-',
-    },
-    {
-      language: 'Flutter',
+      language: 'Javascript',
       title: 'Digi Wallet UI',
       description: 'UI part of a digital wallet with multiple cards',
       link: 'https://github.com/mri999/Wallet-UI-Flutter-',
@@ -58,15 +41,20 @@ function Description() {
     },
   ]
   return (
-    <div className="projectList">
-      {projectList.map((project) => (
-        <ProjectCard
-          language={project.language}
-          title={project.title}
-          description={project.description}
-          link={project.link}
-        />
-      ))}
+    <div>
+      <div id="projects" className="projectList">
+        {projectList.map((project) => (
+          <ProjectCard
+            language={project.language}
+            title={project.title}
+            description={project.description}
+            link={project.link}
+          />
+        ))}
+      </div>
+      <div id="education">
+        
+      </div>
     </div>
   )
 }

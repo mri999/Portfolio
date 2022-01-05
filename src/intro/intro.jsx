@@ -4,7 +4,7 @@ import { RiExternalLinkLine } from 'react-icons/ri'
 import './intro.css'
 
 function SectionTag() {
-  const sections = ['Education', 'Projects', 'Experience']
+  const sections = ['Projects', 'Education', 'Work Experience']
 
   return sections.map((section, index) => {
     return (
@@ -22,7 +22,8 @@ function Intro() {
     <div className="introSection">
       <div className="heading">Hello, I’m Mridul Kumar.</div>
       <div className="aboutMe">
-        I’m a Software Developer working on Front-End Experiences at{' '}
+        I’m a Software Developer working on building scalable enterprise
+        solutions at{' '}
         <span>
           <a
             className="companyLink"
@@ -33,8 +34,7 @@ function Intro() {
             Procol
           </a>
         </span>
-        . My Front-End experices include working on React JS and Flutter
-        primarily.
+        . My Front-End experices include working on React JS and Flutter.
       </div>
       <div className="sections">
         <SectionTag />

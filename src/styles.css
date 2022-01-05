@@ -6,3 +6,12 @@
   display: flex;
 }
 
+.intro{
+  position: fixed
+}
+
+.description{
+  width: 100%;
+  margin-left: 560px;
+  overflow-y: scroll;
+}

@@ -5,8 +5,12 @@ import './styles.css'
 function Me() {
   return (
     <div className="main">
-      <Intro />
-      <Description />
+      <div className="intro">
+        <Intro />
+      </div>
+      <div className="description">
+        <Description />
+      </div>
     </div>
   )
 }
