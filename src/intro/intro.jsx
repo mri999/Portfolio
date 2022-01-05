@@ -4,7 +4,7 @@ import { RiExternalLinkLine } from 'react-icons/ri'
 import './intro.css'
 
 function SectionTag() {
-  const sections = ['PROJECTS', 'TALKS', 'INTERVIEWS']
+  const sections = ['Education', 'Projects', 'Experience']
 
   return sections.map((section, index) => {
     return (
@@ -25,7 +25,7 @@ function Intro() {
         I’m a Software Developer working on Front-End Experiences at{' '}
         <span>
           <a
-            className="link"
+            className="companyLink"
             href="https://www.procol.io/"
             target="_blank"
             rel="noreferrer"
@@ -33,18 +33,17 @@ function Intro() {
             Procol
           </a>
         </span>
-        . I can't shut up about test-driven development and utility-first CSS. I
-        also host the Developer Experience podcast, and share what I learn on my
-        blog frontstuff.io, or at meetups and conferences.
+        . My Front-End experices include working on React JS and Flutter
+        primarily.
       </div>
       <div className="sections">
         <SectionTag />
       </div>
       <div className="contact">
-        <div className="contactMe">Find me on </div>
+        <div className="contactMe">mridulbrt3@gmail.com </div>
         <a
           className="insta"
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/mridulkumar__/"
           target="_blank"
           rel="noreferrer"
         >
