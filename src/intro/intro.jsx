@@ -1,10 +1,11 @@
 import React from 'react'
-import { AiFillGithub, AiOutlineInstagram } from 'react-icons/ai'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+
 import { RiExternalLinkLine } from 'react-icons/ri'
 import './intro.css'
 
 function SectionTag() {
-  const sections = ['Projects', 'Education', 'Work Experience']
+  const sections = ['Projects', 'Work Experience']
 
   return sections.map((section, index) => {
     return (
@@ -40,16 +41,17 @@ function Intro() {
         <SectionTag />
       </div>
       <div className="contact">
-        <div className="contactMe">mridulbrt3@gmail.com </div>
+        <button className="resume">
+          <span className="resumeText"> Resume ↓ </span>
+        </button>
         <a
           className="insta"
-          href="https://www.instagram.com/mridulkumar__/"
+          href="https://www.linkedin.com/in/mridul-kumar-410402181/"
           target="_blank"
           rel="noreferrer"
         >
-          <AiOutlineInstagram className="icon" />
-          Insta
-          <RiExternalLinkLine className="externalLinkIcon" />
+          <AiFillLinkedin className="icon" />
+          LinkedIn
         </a>
         <a
           className="github"
@@ -59,7 +61,6 @@ function Intro() {
         >
           <AiFillGithub className="icon" />
           Github
-          <RiExternalLinkLine className="externalLinkIcon" />
         </a>
       </div>
     </div>

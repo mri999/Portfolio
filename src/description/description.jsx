@@ -18,6 +18,16 @@ function ProjectCard({ language, title, description, link }) {
   )
 }
 
+function SectionCard({ work, time, company }) {
+  return (
+    <div className="sectionCard">
+      <div className="company"> {company}</div>
+      <div className="work"> {work}</div>
+      <div className="time"> {time}</div>
+    </div>
+  )
+}
+
 function Description() {
   const projectList = [
     {
@@ -52,8 +62,26 @@ function Description() {
           />
         ))}
       </div>
-      <div id="education">
-        
+      <div id="education" className="educationList">
+        <div className="leftSectionCard">
+          <SectionCard
+            work="Technical Content Writer"
+            company="GeeksForGeeks"
+            time="May-July 2020"
+          />
+          <SectionCard
+            work="Technical Content Writer"
+            company="CodingNinjas"
+            time="Jun-Nov 2020"
+          />
+        </div>
+        <div className="rightSectionCard">
+          <SectionCard
+            work="Software Developer"
+            company="Procol"
+            time="Feb 2021- present"
+          />
+        </div>
       </div>
     </div>
   )
