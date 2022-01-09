@@ -16,7 +16,7 @@ function ProjectCard({ language, title, description, link, live }) {
           </a>
           {live && (
             <a className="link" href={live} target="_blank" rel="noreferrer">
-              Live
+              Live at
               <CgExternal className="externalLinkIcon" />
             </a>
           )}
