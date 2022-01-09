@@ -53,7 +53,17 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    margin-top: 6px;
+}
+
+.bottomLinks{
+    background: transparent;
+    display: flex;
+}
+
+.externalLinkIcon{
+    background: transparent;
+    margin-right: 12px;
+    margin-left: 4px;
 }
 
 .educationList{

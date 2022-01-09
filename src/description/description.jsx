@@ -2,16 +2,24 @@ import React from 'react'
 import { CgExternal } from 'react-icons/cg'
 import './description.css'
 
-function ProjectCard({ language, title, description, link }) {
+function ProjectCard({ language, title, description, link, live }) {
   return (
     <div>
       <a className="card" href={link} target="_blank" rel="noreferrer">
         <div className="codeLanguage"> {language} </div>
         <div className="projectTitle">{title}</div>
         <div className="projectDescription">{description}</div>
-        <div className="link">
-          Github
-          <CgExternal className="externalLinkIcon" />
+        <div className="bottomLinks">
+          <a className="link" href={link} target="_blank" rel="noreferrer">
+            Github
+            <CgExternal className="externalLinkIcon" />
+          </a>
+          {live && (
+            <a className="link" href={live} target="_blank" rel="noreferrer">
+              Live
+              <CgExternal className="externalLinkIcon" />
+            </a>
+          )}
         </div>
       </a>
     </div>
@@ -39,9 +47,10 @@ function Description() {
     },
     {
       language: 'Javascript',
-      title: 'Digi Wallet UI',
-      description: 'UI part of a digital wallet with multiple cards',
-      link: 'https://github.com/mri999/Wallet-UI-Flutter-',
+      title: 'Crypto Market',
+      description: 'Get latest insights about crypto coins',
+      link: 'https://github.com/mri999/CryptoMarket',
+      live: 'https://mk-crypto-market.netlify.app/',
     },
     {
       language: 'Flutter',
@@ -59,6 +68,7 @@ function Description() {
             title={project.title}
             description={project.description}
             link={project.link}
+            live={project.live}
           />
         ))}
       </div>
