@@ -1,13 +1,14 @@
 .introSection{
     display: flex;
     flex-direction: column;
-    max-width: 460px;
+    max-width: 600px;
     padding: 64px;
 }
 
 .heading{
-    font-size: 64px;
+    font-size: 72px;
     color: white;
+    max-width: 460px;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
 }
@@ -17,6 +18,7 @@
     font-family: 'Nunito', sans-serif;
     margin-top: 32px;
     line-height: 2;
+    font-size: 18px;
 }
 
 .companyLink{
@@ -38,7 +40,7 @@
     margin-top: 16px;
     margin-bottom: 12px;
     color: #949495;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Inconsolata', monospace;
 }
 

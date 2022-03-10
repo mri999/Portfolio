@@ -7,12 +7,12 @@
 }
 
 .intro{
-  position: fixed
+  position: fixed;
 }
 
 .description{
   width: 100%;
-  margin-left: 560px;
+  margin-left: 700px;
   overflow-y: scroll;
   overflow-x: auto;
 }

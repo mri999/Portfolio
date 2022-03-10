@@ -46,17 +46,24 @@ function Description() {
       link: 'https://github.com/mri999/Wallet-UI-Flutter-',
     },
     {
+      language: 'Flutter',
+      title: 'Calculator UI',
+      description: 'Neumorphism Calculator UI',
+      link: 'https://github.com/mri999/Neumorphism-Calculator-UI',
+    },
+    {
+      language: 'Flutter',
+      title: 'Google Clone',
+      description: 'Google Clone',
+      link: 'https://github.com/mri999/Flutter-Google-Clone',
+      live: 'https://mk-google-clone.netlify.app/#/',
+    },
+    {
       language: 'Javascript',
       title: 'Crypto Market',
       description: 'Get latest insights about crypto coins',
       link: 'https://github.com/mri999/CryptoMarket',
       live: 'https://mk-crypto-market.netlify.app/',
-    },
-    {
-      language: 'Flutter',
-      title: 'Digi Wallet UI',
-      description: 'UI part of a digital wallet with multiple cards',
-      link: 'https://github.com/mri999/Wallet-UI-Flutter-',
     },
   ]
   return (

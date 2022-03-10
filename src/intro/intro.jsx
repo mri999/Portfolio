@@ -1,19 +1,23 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-
-import { RiExternalLinkLine } from 'react-icons/ri'
 import './intro.css'
 
 function SectionTag() {
-  const sections = ['Projects', 'Work Experience']
+  const sections = [
+    { name: 'Projects', id: 'projects' },
+    { name: 'Work Experience', id: 'education' },
+  ]
 
   return sections.map((section, index) => {
     return (
-      <div className="sectionTag">
-        0{index + 1}
-        <div className="line"></div>
-        {section}
-      </div>
+      <Link activeClass="active" spy={true} smooth={true} to={section.id}>
+        <div className="sectionTag">
+          0{index + 1}
+          <div className="line"></div>
+          {section.name}
+        </div>
+      </Link>
     )
   })
 }
@@ -23,8 +27,8 @@ function Intro() {
     <div className="introSection">
       <div className="heading">Hello, I’m Mridul Kumar.</div>
       <div className="aboutMe">
-        I’m a Software Developer working on building scalable enterprise
-        solutions at{' '}
+        I’m a Software Engineer working on building scalable enterprise
+        solutions at{'  '}
         <span>
           <a
             className="companyLink"
