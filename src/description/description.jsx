@@ -39,17 +39,11 @@ function SectionCard({ work, time, company }) {
 function Description() {
   const projectList = [
     {
-      language: 'Flutter',
-      title: 'Digi Wallet UI',
-      description:
-        'Designed a static UI of a digital wallet with multiple cards',
-      link: 'https://github.com/mri999/Wallet-UI-Flutter-',
-    },
-    {
-      language: 'Flutter',
-      title: 'Calculator UI',
-      description: 'Neumorphism static calculator UI',
-      link: 'https://github.com/mri999/Neumorphism-Calculator-UI',
+      language: 'React JS',
+      title: 'Crypto Market',
+      description: 'Get latest insights about crypto coins. Used CoinGecko api',
+      link: 'https://github.com/mri999/CryptoMarket',
+      live: 'https://mk-crypto-market.netlify.app/',
     },
     {
       language: 'Flutter',
@@ -59,11 +53,17 @@ function Description() {
       live: 'https://mk-google-clone.netlify.app/#/',
     },
     {
-      language: 'Javascript',
-      title: 'Crypto Market',
-      description: 'Get latest insights about crypto coins. Used CoinGecko api',
-      link: 'https://github.com/mri999/CryptoMarket',
-      live: 'https://mk-crypto-market.netlify.app/',
+      language: 'Flutter',
+      title: 'Calculator UI',
+      description: 'Neumorphism static calculator UI',
+      link: 'https://github.com/mri999/Neumorphism-Calculator-UI',
+    },
+    {
+      language: 'Flutter',
+      title: 'Digi Wallet UI',
+      description:
+        'Designed a static UI of a digital wallet with multiple cards',
+      link: 'https://github.com/mri999/Wallet-UI-Flutter-',
     },
   ]
   return (
