@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 76px;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .card{
@@ -10,8 +10,8 @@
     flex-direction: column;
     justify-content: start;
     text-decoration: none;
-    width: 70%;
-    background-color: rgba(32,32,34);
+    width: 75%;
+    background-color: rgb(33,32,35);
     border-radius: 4px;
     padding: 36px;
     cursor: pointer;
@@ -19,8 +19,9 @@
     margin-left: 36px;
     transition: .3s 
 }
-.card:hover, .sectionCard:hover {
-    transform: scale(1.08);
+.projectList ,.card:hover, .sectionCard:hover {
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 .codeLanguage, .projectTitle, .projectDescription,.link{

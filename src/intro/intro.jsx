@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import './intro.css'
+import me from '../assets/me-modified.png'
 
 function SectionTag() {
   const sections = [
@@ -39,12 +40,13 @@ function Intro() {
             Procol
           </a>
         </span>
-        . My Front-End experices include working on React JS and Flutter.
+        . My Front-End experiences include working on React JS and Flutter.
       </div>
       <div className="sections">
         <SectionTag />
       </div>
       <div className="contact">
+        <img src={me} alt="mridulkumar" height="60" width="60" />
         <button className="resume">
           <span className="resumeText"> Resume ↓ </span>
         </button>

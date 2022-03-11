@@ -48,7 +48,7 @@ function Description() {
     {
       language: 'Flutter',
       title: 'Calculator UI',
-      description: 'Neumorphism Calculator UI',
+      description: 'Neumorphism static calculator UI',
       link: 'https://github.com/mri999/Neumorphism-Calculator-UI',
     },
     {
@@ -61,7 +61,7 @@ function Description() {
     {
       language: 'Javascript',
       title: 'Crypto Market',
-      description: 'Get latest insights about crypto coins',
+      description: 'Get latest insights about crypto coins. Used CoinGecko api',
       link: 'https://github.com/mri999/CryptoMarket',
       live: 'https://mk-crypto-market.netlify.app/',
     },
