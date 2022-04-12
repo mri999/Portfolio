@@ -48,7 +48,7 @@ function Intro() {
       <div className="contact">
         <img src={me} alt="mridulkumar" height="60" width="60" />
         <a
-          href="https://drive.google.com/uc?id=14q1Vg-vJJ-iUSHdWx9dpDaMMA5i3MqME&export=download"
+          href="https://drive.google.com/uc?id=1BY7Urw-bsthx8QD4pE_u1XVp6v2QgYZE&export=download"
           target="_blank"
           rel="noreferrer"
           download="mridulKumar.pdf"
