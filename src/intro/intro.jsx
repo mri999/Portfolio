@@ -47,9 +47,16 @@ function Intro() {
       </div>
       <div className="contact">
         <img src={me} alt="mridulkumar" height="60" width="60" />
-        <button className="resume">
-          <span className="resumeText"> Resume ↓ </span>
-        </button>
+        <a
+          href="https://drive.google.com/uc?id=1roF28H5o0_q99aRMjJwa_6FpYrFHkBSe&export=download"
+          target="_blank"
+          rel="noreferrer"
+          download="mridulKumar.pdf"
+        >
+          <button className="resume">
+            <span className="resumeText"> Resume ↓ </span>
+          </button>
+        </a>
         <a
           className="insta"
           href="https://www.linkedin.com/in/mridul-kumar-410402181/"
