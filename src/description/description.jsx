@@ -1,5 +1,6 @@
 import React from 'react'
 import { CgExternal } from 'react-icons/cg'
+import FadeIn from 'react-fade-in'
 import './description.css'
 
 function ProjectCard({ language, title, description, link, live }) {
@@ -70,13 +71,15 @@ function Description() {
     <div>
       <div id="projects" className="projectList">
         {projectList.map((project) => (
-          <ProjectCard
-            language={project.language}
-            title={project.title}
-            description={project.description}
-            link={project.link}
-            live={project.live}
-          />
+          <FadeIn delay={300} transitionDuration={1000}>
+            <ProjectCard
+              language={project.language}
+              title={project.title}
+              description={project.description}
+              link={project.link}
+              live={project.live}
+            />
+          </FadeIn>
         ))}
       </div>
       <div id="education" className="educationList">
