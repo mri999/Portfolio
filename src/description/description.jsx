@@ -68,18 +68,16 @@ function Description() {
     },
   ]
   return (
-    <div>
+    <FadeIn delay={300} transitionDuration={1000}>
       <div id="projects" className="projectList">
         {projectList.map((project) => (
-          <FadeIn delay={300} transitionDuration={1000}>
-            <ProjectCard
-              language={project.language}
-              title={project.title}
-              description={project.description}
-              link={project.link}
-              live={project.live}
-            />
-          </FadeIn>
+          <ProjectCard
+            language={project.language}
+            title={project.title}
+            description={project.description}
+            link={project.link}
+            live={project.live}
+          />
         ))}
       </div>
       <div id="education" className="educationList">
@@ -103,7 +101,7 @@ function Description() {
           />
         </div>
       </div>
-    </div>
+    </FadeIn>
   )
 }
 
