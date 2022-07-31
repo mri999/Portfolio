@@ -47,6 +47,13 @@ function Description() {
       live: 'https://mk-crypto-market.netlify.app/',
     },
     {
+      language: 'React JS',
+      title: 'Hulu Clone',
+      description: 'Hulu Clone built using Next JS, tailwind CSS',
+      link: 'https://github.com/mri999/Hulu',
+      live: 'https://mk-hulu.vercel.app/',
+    },
+    {
       language: 'Flutter',
       title: 'Google Clone',
       description: 'Google Clone',
